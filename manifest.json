@@ -1,0 +1,21 @@
+{
+  "vendor": "CHANGE_ME",
+  "name": "sold-and-delivered-by",
+  "version": "0.3.0",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2020-09-13",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.product-context": "0.x",
+    "vtex.css-handles": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "title": "sold-and-delivered-by",
+  "description": "A app to show the seller by SKU in Product Detail Page."
+}
