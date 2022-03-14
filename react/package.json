@@ -2,12 +2,11 @@
   "name": "react",
   "version": "1.0.0",
   "description": "react app",
-  "main": "HelloWorld.js",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "igor.silva@corebiz.com.br",
+  "author": "trino.alexandre@gmail.com",
   "license": "ISC"
 }
