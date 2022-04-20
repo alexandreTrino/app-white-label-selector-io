@@ -1,9 +1,9 @@
-.frequencyListWrapper{
+.frequencyList__wrapper{
   list-style: none;
   padding: 0;
 }
 
-.frequencyItem{
+.frequencyList__item{
   padding: 15px 0;
   border-bottom: 1px solid #f0f0f0;
   cursor: pointer;
@@ -12,12 +12,12 @@
   font-size: 14px;
 }
 
-.frequencyItem:last-child{
+.frequencyList__item:last-child{
   border: none;
   padding-bottom: 0;
 }
 
-.frequencyItem::before{
+.frequencyList__item::before{
   content: "";
   display: block;
   width: 10px;
@@ -25,12 +25,12 @@
   border: 2px solid black;
 }
 
-.frequencyItem.frequencyActive::before,
-.frequencyItem.frequencyActive:hover::before{
+.frequencyList__item.frequencyActive::before,
+.frequencyList__item.frequencyActive:hover::before{
   background: black;
 }
 
-.frequencyItem:hover::before{
+.frequencyList__item:hover::before{
   background: #ddd;
 }
 

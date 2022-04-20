@@ -1,7 +1,7 @@
 {
-  "vendor": "grupomva",
+  "vendor": "[[ ACCOUNT_NAME ]]",
   "name": "subscription-modal",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "builders": {
     "store": "0.x",
     "react": "3.x",
@@ -15,6 +15,7 @@
     "vtex.store": "2.x",
     "vtex.product-context": "0.x",
     "vtex.css-handles": "0.x",
+    "vtex.formatted-price": "0.x",
     "vtex.rich-text": "0.x",
     "vtex.styleguide": "9.x",
     "vtex.render-runtime": "8.x",
