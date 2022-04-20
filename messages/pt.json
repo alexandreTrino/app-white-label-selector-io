@@ -1,0 +1,13 @@
+{
+  "store/subscription-modal.title" : "Para assinantes",
+  "admin/subscription-modal.schemaModalTitle": "Titulo do Popup",
+  "store/subscription-modal.schemaModalTitleSubscriber": "Frequência de compra",
+  "store/subscription-modal.openSubscriberButton": "Assinar e economizar",
+  "store/subscription-modal.schemaModalSubTitleSubscriber": "Selecione abaixo a frequência que deseja receber os seus produtos:",
+  "store/subscription-modal.submitSubscription": "Salvar e continuar",
+  "store/subscription-modal.titleItemPlacedModal": "Produto com Assinatura adicionado ao carrinho",
+  "store/subscription-modal.subTitleItemPlacedModal": "Finalize seu pedido para começar a receber este item de forma recorrente.",
+  "store/subscription-modal.selectedQuantity": "Quantidade: ",
+  "store/subscription-modal.toNavigate": "Continuar comprando",
+  "store/subscription-modal.toCheckout": "Finalizar compra"
+}

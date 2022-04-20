@@ -1,0 +1,39 @@
+.frequencyListWrapper{
+  list-style: none;
+  padding: 0;
+}
+
+.frequencyItem{
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  column-gap: 10px;
+  line-height: 0;
+  font-size: 14px;
+}
+
+.frequencyItem:last-child{
+  border: none;
+  padding-bottom: 0;
+}
+
+.frequencyItem::before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+}
+
+.frequencyItem.frequencyActive::before,
+.frequencyItem.frequencyActive:hover::before{
+  background: black;
+}
+
+.frequencyItem:hover::before{
+  background: #ddd;
+}
+
+.submitSubscriptionWrapper{
+  margin-top: 40px;
+}

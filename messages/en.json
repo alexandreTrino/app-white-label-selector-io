@@ -1,0 +1,13 @@
+{
+  "store/subscription-modal.title" : "For subscribers",
+  "admin/subscription-modal.schemaModalTitle": "Modal title",
+  "store/subscription-modal.schemaModalTitleSubscriber": "Purchase frequency",
+  "store/subscription-modal.openSubscriberButton": "Subscribe and economize",
+  "store/subscription-modal.schemaModalSubTitleSubscriber": "Select below the frequency you want to receive your products:",
+  "store/subscription-modal.submitSubscription": "Save and continue",
+  "store/subscription-modal.titleItemPlacedModal": "Item with recurrency added to cart",
+  "store/subscription-modal.subTitleItemPlacedModal": "Finalize your order to start receiving this product periodically.",
+  "store/subscription-modal.selectedQuantity": "Quantity: ",
+  "store/subscription-modal.toNavigate": "Keep browsing",
+  "store/subscription-modal.toCheckout": "Finish order"
+}

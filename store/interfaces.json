@@ -1,5 +1,5 @@
 {
-  "sold-and-delivered-by": {
-    "component":"SoldAndDeliveryBy"
+  "subscription-modal": {
+    "component":"SubscriptionModal"
   }
 }
