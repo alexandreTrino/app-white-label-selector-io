@@ -14,52 +14,66 @@ import App from './components/App'
 const Index = (props) => {
 
   //Local CSS Handles
-  const handles = useCssHandles(["wrapperSubscription"])
+  const handles = useCssHandles(["subscription__wrapper"])
 
   return (
     canUseDOM ? (
       <ModalsProvider>
         <App
-          modalHelperTitle={props.modalHelperTitle}
           percentOff={props.percentOff}
           noFrequencyText={props.noFrequencyText}
           frequencyList={props.frequencyList}
+          helperLabel={props.helperLabel}
+          isHelperLabel={props.isHelperLabel}
         />
       </ModalsProvider>
     ) : (
-      <div className={`${handles.wrapperSubscription} ${handles.wrapperSubscription}`}>
+      <div className={`${handles.subscription__wrapper}`}>
         <Spinner className={handles.spinner} color="currentColor" size={20} />
       </div>
     )
   )
 }
 
-App.defaultProps = {
+Index.defaultProps = {
   modalHelperTitle: "Subscription Store",
   percentOff: 10,
-  noFrequencyText: "There is still not purchase day options.",
+  noFrequencyText: "There is still not frequency options for purchase.",
+  helperLabel: "*Lorem ipsum dolor sit amet consectuener :D* Vivamus id lorem sem. Aliquam ornare ex cursus, quis [bibendum metus](/institucional/?target=_blank).",
+  isHelperLabel: true
 }
 
-App.schema = {
+Index.schema = {
   title: 'Subscription Modal',
   description: 'For users that wish to subscribe a product',
   type: 'object',
   properties: {
-    modalHelperTitle:{
-      type: 'string',
-      title: 'Modal Helper title',
-      default: App.defaultProps.modalHelperTitle
-    },
     percentOff: {
       type: 'number',
       title: 'Percent discount',
-      default: App.defaultProps.percentOff
+      default: Index.defaultProps.percentOff
     },
     noFrequencyText: {
       title: 'No Frequency items text',
       description: '',
       type: 'string',
-      default: App.defaultProps.noFrequencyText,
+      default: Index.defaultProps.noFrequencyText,
+    },
+    helperLabel: {
+      title: 'Helper label',
+      description: 'Label of helper text below of button (* Markdown language)',
+      type: 'string',
+      default: Index.defaultProps.helperLabel
+    },
+    isHelperLabel: {
+      title: 'Is Helper label active?',
+      description: 'Show or Hide the Helper label',
+      type: "boolean",
+      enum: [
+        true,
+        false
+      ],
+      default:  Index.defaultProps.isHelperLabel
     },
     frequencyList: {
       title: 'Frequency options',

@@ -9,5 +9,6 @@
   "store/subscription-modal.subTitleItemPlacedModal": "Finaliza tu orden para empezar a recibir este artículo de forma recurrente.",
   "store/subscription-modal.selectedQuantity": "Cantidad: ",
   "store/subscription-modal.toNavigate": "Continuar comprando",
-  "store/subscription-modal.toCheckout": "Finalizar compra"
+  "store/subscription-modal.toCheckout": "Finalizar compra",
+  "store/subscription-modal.helperTitle": "*Suscriptores tienen benefícios exclusivos :D* \n Envío gratis a partir de $ 5,99 para suscriptores. \n **Ver aqui** el valor para tu region."
 }

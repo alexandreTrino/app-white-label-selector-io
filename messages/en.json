@@ -9,5 +9,6 @@
   "store/subscription-modal.subTitleItemPlacedModal": "Finalize your order to start receiving this product periodically.",
   "store/subscription-modal.selectedQuantity": "Quantity: ",
   "store/subscription-modal.toNavigate": "Keep browsing",
-  "store/subscription-modal.toCheckout": "Finish order"
+  "store/subscription-modal.toCheckout": "Finish order",
+  "store/subscription-modal.helperTitle": "*Subscribers have exclusive benefits :D* \n Free shipping over $5.99 for subscribers. \n **See here** the value for your region."
 }

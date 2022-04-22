@@ -9,5 +9,6 @@
   "store/subscription-modal.subTitleItemPlacedModal": "Finalize seu pedido para começar a receber este item de forma recorrente.",
   "store/subscription-modal.selectedQuantity": "Quantidade: ",
   "store/subscription-modal.toNavigate": "Continuar comprando",
-  "store/subscription-modal.toCheckout": "Finalizar compra"
+  "store/subscription-modal.toCheckout": "Finalizar compra",
+  "store/subscription-modal.helperTitle": "*Assinantes têm benefícios exclusivos :D* \n Frete fixo a partir de R$ 5,99 para assinantes. \n **Confira aqui** o valor para a sua região."
 }

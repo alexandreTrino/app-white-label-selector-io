@@ -10,7 +10,7 @@ import { Modal, Button } from 'vtex.styleguide'
 import { ModalsContext } from '../../contexts/ModalsContext'
 
 //Local handles
-import handles from './style.css'
+import handles from '../App.css'
 
 // VTEX External Apps
 import RichText from 'vtex.rich-text/index'

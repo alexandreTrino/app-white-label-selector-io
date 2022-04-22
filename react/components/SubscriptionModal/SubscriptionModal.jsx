@@ -19,7 +19,7 @@ import {
 import { ModalsContext } from '../../contexts/ModalsContext'
 
 //Style handles
-import handles from './style.css'
+import handles from '../App.css'
 
 //CSS Handles
 const CSS_HANDLES = [
@@ -33,6 +33,7 @@ const CSS_HANDLES = [
   "frequencyActive",
   "submitSubscription",
   "submitSubscriptionWrapper",
+  "splitInColumns"
 ]
 
 const SubscriptionModal = (props) => {
@@ -55,6 +56,7 @@ const SubscriptionModal = (props) => {
 
   //localVariables
   const itemIndex = Number(cartItems.length)
+  const frequencyItemsLength = props.frequencyList?.length || 0
 
   //local functions
   const submitFrequency = async () => {
@@ -106,9 +108,9 @@ const SubscriptionModal = (props) => {
           <div id="modalSubscriber" className={`${handles.modal__content} ${handles.modalSubscription}`}>
             {
               !isLoading ? (
-                props.frequencyList?.length > 0 ? (
+                frequencyItemsLength > 0 ? (
                   <>
-                    <ul id="frequencyList" className={handles.frequencyList__wrapper}>
+                    <ul id="frequencyList" className={`${handles.frequencyList__wrapper} ${frequencyItemsLength > 5 && handles.splitInColumns}`}>
                       {
                         props.frequencyList.map((item, idx) => {
                           return (
@@ -125,7 +127,7 @@ const SubscriptionModal = (props) => {
                         })
                       }
                     </ul>
-                    <div className={`${handles.submitSubscriptionWrapper} flex items-center justify-end`}>
+                    <div className={`${handles.submitSubscriptionWrapper} flex items-center justify-center`}>
                       <Button disabled={isSelectedFrequency} onClick={async ()=>{
                         await submitFrequency()
                         setModalSubscriberOpen(false)
