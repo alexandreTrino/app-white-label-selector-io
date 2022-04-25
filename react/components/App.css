@@ -2,6 +2,10 @@
   background-color: transparent;
 }
 
+.subscription__helper{
+  column-gap: 10px;
+}
+
 .modal__titleWrapper,
 .modal__subtitle{
   text-align: center;

@@ -110,7 +110,7 @@ const SubscriptionModal = (props) => {
               !isLoading ? (
                 frequencyItemsLength > 0 ? (
                   <>
-                    <ul id="frequencyList" className={`${handles.frequencyList__wrapper} ${frequencyItemsLength > 5 && handles.splitInColumns}`}>
+                    <ul id="frequencyList" className={`${handles.frequencyList__wrapper} ${frequencyItemsLength > 4 && handles.splitInColumns}`}>
                       {
                         props.frequencyList.map((item, idx) => {
                           return (

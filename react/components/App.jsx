@@ -44,12 +44,14 @@ const CSS_HANDLES = [
 const App = (props) => {
 
   //Use Hooks
-  const { setModalHelperOpen, setModalSubscriberOpen } = React.useContext(ModalsContext)
+  const { setModalSubscriberOpen } = React.useContext(ModalsContext)
   const handles = useCssHandles(CSS_HANDLES)
   const productContextValue = useProduct()
 
+  //console.log("productContextValue --> ",productContextValue)
+
   //Variables Hooks
-  const currentPrice = productContextValue.selectedItem.sellers[0].commertialOffer.PriceWithoutDiscount
+  const currentPrice = productContextValue.selectedItem.sellers[0].commertialOffer.Price
 
   return (
     <>

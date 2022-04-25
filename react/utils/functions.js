@@ -3,9 +3,12 @@ export const calcDiscount = (priceItem, discount) => {
 }
 
 export const addAttachment = async (frequency, orderForm, itemIndex) => {
+
+  console.log("frequency --> ",frequency)
+
   const content = {
     "content": {
-      "vtex.subscription.frequency": frequency
+      "vtex.subscription.key.frequency": frequency
     }
   }
   fetch(`/api/checkout/pub/orderForm/${orderForm.id}/items/${itemIndex}/attachments/vtex.subscription.recurrency`, {
@@ -46,20 +49,22 @@ export const addRecurrencyPlan = async (frequency, orderForm, cartItems) => {
     "expectedOrderFormSections":["items","totalizers","clientProfileData","shippingData","paymentData","sellers","messages","marketingData","clientPreferencesData","storePreferencesData","giftRegistryData","ratesAndBenefitsData","openTextField","commercialConditionData","customData"]
   }
 
-  fetch('/api/checkout/pub/orderForm/'+orderForm.id+'/attachments/subscriptionData', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(fields)
-  })
-    .then(res => res.json())
-    .then(data => {
-      console.log("SENT FREQUENCY ATTACHMENT SUCCESSFULLY! -> ", data)
+  setTimeout(()=>{ // bug fix -> sometimes attachment disappear after add recurrency plan
+    fetch('/api/checkout/pub/orderForm/'+orderForm.id+'/attachments/subscriptionData', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(fields)
     })
-    .catch(error => {
-      console.log("ERROR TO SENDING ATTACHMENT -> ",error)
-    })
+      .then(res => res.json())
+      .then(data => {
+        console.log("SENT FREQUENCY ATTACHMENT SUCCESSFULLY! -> ", data)
+      })
+      .catch(error => {
+        console.log("ERROR TO SENDING ATTACHMENT -> ",error)
+      })
+  },1000)
 }
 
 export const addToCart = async (productContextValue, addToCart) => {
