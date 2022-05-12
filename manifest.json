@@ -1,27 +1,25 @@
 {
-  "vendor": "positivaeco",
-  "name": "subscription-modal",
-  "version": "0.4.1",
+  "vendor": "calimaxmx",
+  "name": "white-label-selector",
+  "version": "0.4.2",
   "builders": {
     "store": "0.x",
     "react": "3.x",
     "messages": "1.x"
   },
-  "mustUpdateAt": "2020-09-13",
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "positivaeco.subscription-modal": "0.x",
     "vtex.store": "2.x",
-    "vtex.product-context": "0.x",
     "vtex.css-handles": "0.x",
-    "vtex.formatted-price": "0.x",
     "vtex.rich-text": "0.x",
     "vtex.styleguide": "9.x",
     "vtex.render-runtime": "8.x",
+    "vtex.order-manager": "0.x",
     "vtex.order-items": "0.x",
-    "vtex.order-manager": "0.x"
+    "vtex.order-shipping": "0.x",
+    "vtex.session-client": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
   "title": "subscription-modal",

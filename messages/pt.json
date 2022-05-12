@@ -1,14 +1,13 @@
 {
-  "store/subscription-modal.title" : "Para assinantes",
-  "admin/subscription-modal.schemaModalTitle": "Titulo do Popup",
-  "store/subscription-modal.schemaModalTitleSubscriber": "Frequência de compra",
-  "store/subscription-modal.openSubscriberButton": "Assinar e economizar",
-  "store/subscription-modal.schemaModalSubTitleSubscriber": "Selecione abaixo a frequência que deseja receber os seus produtos:",
-  "store/subscription-modal.submitSubscription": "Salvar e continuar",
-  "store/subscription-modal.titleItemPlacedModal": "Produto com Assinatura adicionado ao carrinho",
-  "store/subscription-modal.subTitleItemPlacedModal": "Finalize seu pedido para começar a receber este item de forma recorrente.",
-  "store/subscription-modal.selectedQuantity": "Quantidade: ",
-  "store/subscription-modal.toNavigate": "Continuar comprando",
-  "store/subscription-modal.toCheckout": "Finalizar compra",
-  "store/subscription-modal.helperTitle": "*Assinantes têm benefícios exclusivos :D* \n Frete fixo a partir de R$ 5,99 para assinantes. \n **Confira aqui** o valor para a sua região."
+  "store/white-label-selector.triggerText" : "Escolher filial",
+  "store/white-label-selector.titleFranchiseModal": "Busque uma filial",
+  "store/white-label-selector.subTitleFranchiseModal": "Você pode encontrar buscando pelo seu CEP ou selecionando uma loja manualmente.",
+  "store/white-label-selector.titleCard1": "Por CEP",
+  "store/white-label-selector.titleCard2": "Escolher a loja",
+  "store/white-label-selector.subtitleCard1": "Automático",
+  "store/white-label-selector.subtitleCard2": "Manual",
+  "store/white-label-selector.buttonTitle": "Filial:",
+  "store/white-label-selector.footerMessage": "Os preços e o estoque podem variar de acordo com a região, filial ou CEP informado.",
+  "store/white-label-selector.responseSimulationNotDeliveryOption": "Esse código postal não dispõe de envío à domicílio. Tente outro código postal ou escolha uma filial manualmente para retirar manualmente o pedido.",
+  "store/white-label-selector.responseSimulationNotDelivery": "A loja não entrega na região deste código postal. Tente outro código postal ou escolha uma filial manualmente para retirar manualmente o pedido."
 }

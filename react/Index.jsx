@@ -6,7 +6,7 @@ import { useCssHandles } from 'vtex.css-handles'
 import { Spinner } from 'vtex.styleguide'
 
 //local contexts
-import ModalsProvider from './contexts/ModalsContext'
+import ContextProvider from './contexts/Context'
 
 //local apps
 import App from './components/App'
@@ -14,21 +14,19 @@ import App from './components/App'
 const Index = (props) => {
 
   //Local CSS Handles
-  const handles = useCssHandles(["subscription__wrapper"])
+  const handles = useCssHandles(["wrapper,spinner"])
 
   return (
     canUseDOM ? (
-      <ModalsProvider>
+      <ContextProvider>
         <App
-          percentOff={props.percentOff}
-          noFrequencyText={props.noFrequencyText}
-          frequencyList={props.frequencyList}
-          helperLabel={props.helperLabel}
-          isHelperLabel={props.isHelperLabel}
+          modalTitle={props.modalTitle}
+          placeholderInputCP={props.placeholderInputCP}
+          fakeSku={props.fakeSku}
         />
-      </ModalsProvider>
+      </ContextProvider>
     ) : (
-      <div className={`${handles.subscription__wrapper}`}>
+      <div className={`${handles.wrapper}`}>
         <Spinner className={handles.spinner} color="currentColor" size={20} />
       </div>
     )
@@ -36,65 +34,28 @@ const Index = (props) => {
 }
 
 Index.defaultProps = {
-  modalHelperTitle: "Subscription Store",
-  percentOff: 10,
-  noFrequencyText: "There is still not frequency options for purchase.",
-  helperLabel: "*Lorem ipsum dolor sit amet consectuener :D* Vivamus id lorem sem. Aliquam ornare ex cursus, quis [bibendum metus](/institucional/?target=_blank).",
-  isHelperLabel: true
+  modalTitle: "Buscar Tienda",
+  placeholderInputCP: "Ingresa tu código postal",
+  fakeSku: 3575
 }
 
 Index.schema = {
-  title: 'Subscription Modal',
-  description: 'For users that wish to subscribe a product',
+  title: 'White Label Selector',
+  description: 'Select a franchise catalog',
   type: 'object',
   properties: {
-    percentOff: {
+    fakeSKU: {
+      title: 'Fake SKU',
+      description: 'ID of fake SKU with infinity inventory to complete a orderForm simulation.',
       type: 'number',
-      title: 'Percent discount',
-      default: Index.defaultProps.percentOff
+      default: Index.defaultProps.fakeSku,
     },
-    noFrequencyText: {
-      title: 'No Frequency items text',
+    placeholderInputCP:{
+      title: 'placeholder postal-code input',
       description: '',
       type: 'string',
-      default: Index.defaultProps.noFrequencyText,
-    },
-    helperLabel: {
-      title: 'Helper label',
-      description: 'Label of helper text below of button (* Markdown language)',
-      type: 'string',
-      default: Index.defaultProps.helperLabel
-    },
-    isHelperLabel: {
-      title: 'Is Helper label active?',
-      description: 'Show or Hide the Helper label',
-      type: "boolean",
-      enum: [
-        true,
-        false
-      ],
-      default:  Index.defaultProps.isHelperLabel
-    },
-    frequencyList: {
-      title: 'Frequency options',
-      description: 'Frequency list options',
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          label: {
-            title: 'Label',
-            description: 'Label of frecuency option that will show for users.',
-            type: 'string',
-          },
-          attachmentLabel: {
-            title: 'Attachment label',
-            description: 'Attachment label for frecuency option. ex: "2 day" or "2 week" or "2 year" ',
-            type: 'string',
-          }
-        },
-      },
-    },
+      default: Index.defaultProps.placeholderInputCP
+    }
   },
 }
 

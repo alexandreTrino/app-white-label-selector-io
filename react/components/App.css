@@ -11,152 +11,26 @@
   text-align: center;
 }
 
-.subscription__discountValue{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-}
-
 .content{
   column-gap: 10px;
   margin-top: 20px;
 }
 
-.subscription__percentDiscountPercent{
-  border-radius: 8px;
-  padding: 2px 5px;
-  background-color: rgb(218, 242, 212);
-}
-
-.subscription__percentDiscountPercent__label{
+.modal__response{
+  background-color: yellow;
+  padding: 10px 15px;
   font-size: 12px;
-  font-weight: 600;
-  line-height: 17px;
-  color: rgb(37, 176, 0);
 }
 
-.openModalSubscriberButtonWrapper{
-  margin: 15px 0;
+.footer__message{
+  font-size: 12px;
 }
 
-.openModalSubscriberButtonWrapper .vtex-button{
-  color: rgb(255, 255, 255);
-  height: 48px;
-  font-size: 16px;
-  padding: 14.5px 16px;
-  background-color: #333;
-  font-weight: 700;
+.footer__icon{
+  width: 15px;
 }
 
-.modalTitleHelperSpan{
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.subscribeModalSubtitle{
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-.frequencyList__wrapper{
-  list-style: none;
-  padding: 0;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.frequencyList__wrapper.splitInColumns{
-  columns: 2;
-  column-fill: balance;
+:global(.vtex-modal__modal) :global(.vtex-styleguide-9-x-shadowTransition){
   justify-content: center;
-  column-gap: 40px;
-}
-
-.frequencyList__item{
-  padding: 12px 0;
-  cursor: pointer;
-  column-gap: 10px;
-  line-height: 0;
-  font-size: 14px;
-}
-
-.frequencyList__item::before{
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid black;
-}
-
-.frequencyList__item.frequencyActive::before,
-.frequencyList__item.frequencyActive:hover::before{
-  background: black;
-}
-
-.frequencyList__item:hover::before{
-  background: #ddd;
-}
-
-.submitSubscriptionWrapper{
-  margin-top: 40px;
-}
-
-.itemPlacedModal__content{
-  column-gap: 30px;
-  row-gap: 30px;
-  margin-bottom: 30px;
-}
-@media(min-width: 768px){
-  .itemPlacedModal__img{
-    max-width: 40%;
-  }
-}
-
-.itemPlacedModal__img{
-  display: block;
-  border-radius: 5px;
-}
-
-.itemPlacedModal__title{
-  margin-bottom: 10px;
-}
-
-.itemPlacedModal__subTitle{
-  font-size: 14px;
-  margin-top: 0;
-}
-
-.itemPlacedModal__skuName{
-  font-size: 14px;
-}
-
-.itemPlacedModal__selectedQtyWrapper{
-  font-size: 12px;
-}
-
-.itemPlacedModal__selectedQty{
-  font-weight: 700;
-  margin-left: 5px;
-}
-
-.itemPlacedModal__bottomBar{
-  column-gap: 20px;
-}
-
-
-/*LOCAL RICH TEXT*/
-.paragraph{
-  margin: 0;
-  font-size: 11px;
-  font-weight: 500;
-}
-
-.italic{
-  font-size: 9px;
-  font-style: normal;
-  display: block;
-}
-
-.link{
-  text-decoration: underline;
+  align-items: center;
 }

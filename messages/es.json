@@ -1,14 +1,13 @@
 {
-  "store/subscription-modal.title" : "Para suscriptores",
-  "admin/subscription-modal.schemaModalTitle": "Titulo del Popup",
-  "store/subscription-modal.schemaModalTitleSubscriber": "Frecuencia de compra",
-  "store/subscription-modal.openSubscriberButton": "Suscribir y ahorrar",
-  "store/subscription-modal.schemaModalSubTitleSubscriber": "Seleccione a continuación la frecuencia con la que desea recibir sus productos:",
-  "store/subscription-modal.submitSubscription": "Guardar e continuar",
-  "store/subscription-modal.titleItemPlacedModal": "Producto recurrente agregado al carrito",
-  "store/subscription-modal.subTitleItemPlacedModal": "Finaliza tu orden para empezar a recibir este artículo de forma recurrente.",
-  "store/subscription-modal.selectedQuantity": "Cantidad: ",
-  "store/subscription-modal.toNavigate": "Continuar comprando",
-  "store/subscription-modal.toCheckout": "Finalizar compra",
-  "store/subscription-modal.helperTitle": "*Suscriptores tienen benefícios exclusivos :D* \n Envío gratis a partir de $ 5,99 para suscriptores. \n **Ver aqui** el valor para tu region."
+  "store/white-label-selector.triggerText" : "Elegir sucursal",
+  "store/white-label-selector.titleFranchiseModal": "Elegir tienda",
+  "store/white-label-selector.subTitleFranchiseModal": "Puedes elegir insertando tu codigo postal o seleccionando una de las tiendas manualmente.",
+  "store/white-label-selector.titleCard1": "Por Código Postal",
+  "store/white-label-selector.titleCard2": "Elegir la tienda",
+  "store/white-label-selector.subtitleCard1": "Automático",
+  "store/white-label-selector.subtitleCard2": "Manual",
+  "store/white-label-selector.buttonTitle": "Sucursal:",
+  "store/white-label-selector.footerMessage": "Los precios y el inventario pueden variar según la región, sucursal o código postal informado.",
+  "store/white-label-selector.responseSimulationNotDeliveryOption": "Este código postal no cuenta con servicio a domicilio. Intente con otro código postal o elija una ubicación manualmente para recoger su pedido manualmente.",
+  "store/white-label-selector.responseSimulationNotDelivery": "La tienda no realiza entregas en la región de este código postal. Pruebe con otro código postal o elija una sucursal manualmente para recoger el pedido manualmente."
 }

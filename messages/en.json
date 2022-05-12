@@ -1,14 +1,14 @@
 {
-  "store/subscription-modal.title" : "For subscribers",
-  "admin/subscription-modal.schemaModalTitle": "Modal title",
-  "store/subscription-modal.schemaModalTitleSubscriber": "Purchase frequency",
-  "store/subscription-modal.openSubscriberButton": "Subscribe and economize",
-  "store/subscription-modal.schemaModalSubTitleSubscriber": "Select below the frequency you want to receive your products:",
-  "store/subscription-modal.submitSubscription": "Save and continue",
-  "store/subscription-modal.titleItemPlacedModal": "Item with recurrency added to cart",
-  "store/subscription-modal.subTitleItemPlacedModal": "Finalize your order to start receiving this product periodically.",
-  "store/subscription-modal.selectedQuantity": "Quantity: ",
-  "store/subscription-modal.toNavigate": "Keep browsing",
-  "store/subscription-modal.toCheckout": "Finish order",
-  "store/subscription-modal.helperTitle": "*Subscribers have exclusive benefits :D* \n Free shipping over $5.99 for subscribers. \n **See here** the value for your region."
+  "store/white-label-selector.triggerText" : "Choose franchise",
+  "store/white-label-selector.titleFranchiseModal": "Find a Franchise Store",
+  "store/white-label-selector.subTitleFranchiseModal": "You can find it by your zip code or by choosing a store manually",
+  "store/white-label-selector.titleCard1": "By ZipCode",
+  "store/white-label-selector.titleCard2": "Choose the store",
+  "store/white-label-selector.subtitleCard1": "Auto",
+  "store/white-label-selector.subtitleCard2": "Manual",
+  "store/white-label-selector.buttonTitle": "Franchise:",
+  "store/white-label-selector.footerMessage": "Prices and inventory may vary by region, branch, or zip code reported.",
+  "store/white-label-selector.responseSimulationNotDeliveryOption": "This postal code does not have home delivery. Try another zip code or choose a branch manually to manually pick up the order.",
+  "store/white-label-selector.responseSimulationNotDelivery": "The store does not deliver to the region of this zip code. Try another zip code or choose a branch manually to manually pick up the order."
 }
+
