@@ -163,7 +163,7 @@ const FranchiseModal = (props) => {
           console.log("slaResult.deliveryType --> ", slaResult.deliveryType)
 
           //Set the new franchise catalog on the client session and reload
-          await changeFranchise(slaResult.storeCode, zip)
+          await changeFranchise(slaResult.storeCode, true, zip)
 
         }else{
 
@@ -193,12 +193,14 @@ const FranchiseModal = (props) => {
   }
 
   //CHANGE WHITE LABEL ON CLIENT SESSION
-  const changeFranchise = async (franchise, zipCode) => {
+  const changeFranchise = async (franchise, removeItems, zipCode) => {
 
     console.log("_______zipCode --> ", zipCode)
 
-    //Remove all items from cart
-    await clearOrderFormItems(orderForm, loading, removeItem)
+    removeItems && (
+      //Remove all items from cart
+      await clearOrderFormItems(orderForm, loading, removeItem)
+    )
 
     const tradePolicy = {
       public: {
@@ -351,7 +353,7 @@ const FranchiseModal = (props) => {
                         setSelectedStoreCP(val.cp)
                         setSelectedDeliveryType("pickup-in-point")
                         setLoading(true)
-                        changeFranchise(`${val.seller.split("calimaxmx")[1]}`, zip)
+                        changeFranchise(`${val.seller.split("calimaxmx")[1]}`, true, zip)
                       }}
                     />}
                   </div>

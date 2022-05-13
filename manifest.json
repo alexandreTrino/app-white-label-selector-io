@@ -1,7 +1,7 @@
 {
   "vendor": "calimaxmx",
   "name": "white-label-selector",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "builders": {
     "store": "0.x",
     "react": "3.x",

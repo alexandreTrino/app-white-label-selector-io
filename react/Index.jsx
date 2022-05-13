@@ -4,6 +4,7 @@ import React from "react"
 import { canUseDOM } from 'vtex.render-runtime'
 import { useCssHandles } from 'vtex.css-handles'
 import { Spinner } from 'vtex.styleguide'
+import { OrderFormProvider } from 'vtex.order-manager/OrderForm'
 
 //local contexts
 import ContextProvider from './contexts/Context'
@@ -18,13 +19,15 @@ const Index = (props) => {
 
   return (
     canUseDOM ? (
-      <ContextProvider>
-        <App
-          modalTitle={props.modalTitle}
-          placeholderInputCP={props.placeholderInputCP}
-          fakeSku={props.fakeSku}
-        />
-      </ContextProvider>
+      <OrderFormProvider>
+        <ContextProvider>
+          <App
+            modalTitle={props.modalTitle}
+            placeholderInputCP={props.placeholderInputCP}
+            fakeSku={props.fakeSku}
+          />
+        </ContextProvider>
+      </OrderFormProvider>
     ) : (
       <div className={`${handles.wrapper}`}>
         <Spinner className={handles.spinner} color="currentColor" size={20} />

@@ -1,11 +1,9 @@
 import React, { useEffect, useContext } from 'react'
 
 //VTEX Resources
-import { OrderFormProvider } from 'vtex.order-manager/OrderForm'
 import { useCssHandles } from 'vtex.css-handles'
 import { ButtonWithIcon, Spinner } from 'vtex.styleguide'
 import { FormattedMessage } from 'react-intl'
-import { OrderShippingProvider, useOrderShipping } from 'vtex.order-shipping/OrderShipping'
 
 //style handles1
 import handles from './App.css'
@@ -30,21 +28,16 @@ const CSS_HANDLES = [
 ]
 
 const App = (props) => (
-  <OrderFormProvider>
-    <OrderShippingProvider>
-      <AppMain
-        modalTitle={props.modalTitle}
-        placeholderInputCP={props.placeholderInputCP}
-        fakeSku={props.fakeSku}
-      />
-    </OrderShippingProvider>
-  </OrderFormProvider>
+    <AppMain
+      modalTitle={props.modalTitle}
+      placeholderInputCP={props.placeholderInputCP}
+      fakeSku={props.fakeSku}
+    />
 )
 
 const AppMain = (props) => {
 
   const handles = useCssHandles(CSS_HANDLES)
-  const { selectDeliveryOption } = useOrderShipping()
 
   //Context State Hooks
   const {
@@ -74,15 +67,9 @@ const AppMain = (props) => {
     });
   }
 
-  //SET DELIVERY TYPE
-  const setDeliveryTypeOrderform = (deliveryType) => {
-    selectDeliveryOption(selectedDeliveryType)
-  }
-
   //isDocumentReady?
   useEffect(()=>{
     init()
-    setDeliveryTypeOrderform()
   },[])
 
   return (
